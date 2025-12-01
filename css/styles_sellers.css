@@ -153,7 +153,10 @@ section {
 }
 
 .seller-card img {
-    width: 30vw;
+    border-radius: 50%;
+    width: 20vw;
+    box-shadow: 2px 2px 4px gray;
+    margin-bottom: 0.5rem;
 }
 
 .seller-card h3 {
@@ -199,4 +202,78 @@ footer {
     grid-column: 2;
     margin-left: 1rem;
     align-content: center;
+}
+
+@media screen and (min-width: 600px) {
+    /* Nav bar alterations */
+    nav li {
+        width: 20vw;
+    }
+
+    .drop:hover .dropdown, .drop:focus .dropdown {
+    position: absolute;
+     top: 4.1rem;
+     left:0;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .dropdown li {
+        width: 20vw;
+        padding: 0.5rem;
+    }
+
+    /* Seller card grid alteration */
+    .sub-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2vw;
+    }
+
+    .seller-card {
+        width: 20vw;
+        margin: 0;
+    }
+
+    .seller-card img {
+        width: 10vw;
+    }
+
+    /* Footer alteration */
+    .sub-footer {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .mini-contact {
+        margin-left: 7%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    /* Nav bar alterations */
+    nav li {
+        width: 20vw;
+    }
+
+    .drop:hover .dropdown, .drop:focus .dropdown {
+    position: absolute;
+     top: 4.1rem;
+     left:0;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .dropdown li {
+        width: 20vw;
+        padding: 0.5rem;
+    }
+
+    /* Footer alteration */
+    .sub-footer {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .mini-contact {
+        margin-left: 7%;
+    }
 }

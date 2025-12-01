@@ -72,7 +72,8 @@ header h1 {
 /* navigation menu elements */
 nav {
     grid-row: 2;
-    margin: 0;
+    margin: 0 0 2rem 0;
+    font-family: 'Kumar One';
 }
 
 nav ul {
@@ -93,7 +94,7 @@ li {
     background-color: #2d5f5a;
     padding: 1rem;
     border-radius: 0.25rem;
-    width: 15vw;
+    width: auto;
     justify-content: center;
     transition: all 300ms;
 }
@@ -102,7 +103,7 @@ a {
     display: block;
     width: auto;
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #fff7ee;
 }
@@ -114,14 +115,15 @@ a {
 
 .drop:hover .dropdown, .drop:focus .dropdown {
     position: absolute;
-    top: 3.4rem;
-    left:0;
+     top: 4.1rem;
+     left:0;
     display: flex;
     flex-direction: column;
 }
 
 .dropdown li {
-    width: 15vw;
+    width: 10rem;
+    padding: 0.5rem;
 }
 
 li:hover, li:focus {
@@ -205,10 +207,6 @@ form {
     }
 }
 
-.text-center {
-    
-}
-
 .btn.btn-primary {
     font-family: 'Kumar One';
     font-weight: bold;
@@ -271,4 +269,33 @@ footer {
     grid-column: 2;
     margin-left: 1rem;
     align-content: center;
+}
+
+@media screen and (min-width: 600px) {
+    /* Nav bar alterations */
+    nav li {
+        width: 20vw;
+    }
+
+    .drop:hover .dropdown, .drop:focus .dropdown {
+    position: absolute;
+     top: 4.1rem;
+     left:0;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .dropdown li {
+        width: 20vw;
+        padding: 0.5rem;
+    }
+    
+    /* Footer alteration */
+    .sub-footer {
+        grid-template-columns: 1fr 4fr;
+    }
+
+    .mini-contact {
+        margin-left: 7%;
+    }
 }
