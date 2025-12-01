@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles_contact.css">
+    <link href='https://fonts.googleapis.com/css?family=Kumar One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kdam Thmor' rel='stylesheet'>
+    <title>Markr Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="button header-btn">MARKR</h1>
+    </header>
+    <nav>
+        <ul class="bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sellers.html">Sellers</a></li>
+            <li class="drop"><a href="products.html">Products</a>
+                <ul class="dropdown">
+                    <li><a href="#">Fiber Arts</a></li>
+                    <li><a href="#">Metal Work</a></li>
+                    <li><a href="#">Paintings</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container-form">
+            <h1 class="title text-center mb-4">Contact</h1>
+            <form id="contact-form">
+
+                <!-- Name -->
+                <div class="form-group position-relative">
+                    <label for="formName" class="d-block">
+                        <i class="icon" data-feather="user"></i>
+                    </label>
+                    <input type="text" id="formName" class="form-control form-control-lg thick" placeholder="Name">
+                </div>
+
+                <!-- E-mail -->
+                <div class="form-group position-relative">
+                    <label for="formEmail" class="d-block">
+                        <i class="icon" data-feather="mail"></i>
+                    </label>
+                    <input type="email" id="formEmail" class="form-control form-control-lg thick" placeholder="E-mail">
+                </div>
+
+                <!-- Message -->
+                <div class="form-group message">
+                    <textarea id="formMessage" class="form-control form-control-lg" rows="7" placeholder="Message"></textarea>
+                </div>
+            
+                <!-- Submit btn -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary" tabIndex="-1">SUBMIT</button>
+                </div>
+            </form> 
+        </div>
+    </section>
+    <footer>
+        <div class="sub-footer">
+        <div class="mini-logo">
+            <p>M</p>
+        </div>
+        <div class="mini-contact">
+            <p id="phone"><inline class="bold">Phone:</inline> (951)-222-2222</p>
+            <p id="email"><inline class="bold">Email:</inline> markr@gmail.com</p>
+        </div>
+        </div>
+
+    </footer>
+
+<script>
+    const form = document.getElementById('contact-form');
+    const formMessage = document.getElementById('form-message');
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby7pzLuPb8pPgOpkRE3ToLJe5qFxrj0qAp_n_Rr9GELRaOeWVZRtPEGwWfmu5o_fXrh/exec';
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        formMessage.textContent = 'Sending...';
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                formMessage.textContent = 'Message sent successfully!';
+                form.reset();
+                setTimeout(() => { formMessage.textContent = ''; }, 5000);
+            })
+            .catch(error => {
+                formMessage.textContent = 'Oops! Something went wrong.';
+                console.error('Error!', error.message);
+            });
+    });
+</script>
+</body>

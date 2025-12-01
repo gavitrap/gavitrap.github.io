@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    display: grid;
+    color:#322626;
+    background-color: #fff7ee;
+}
+
+/* header styling start*/
+header {
+    grid-row: 1;
+    justify-items: center;
+    z-index: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Kumar One';
+}
+
+/* header animation start */
+.button {
+   cursor: pointer;
+   width:100%;
+   padding: 15px 25px;
+   position: relative;
+   z-index: 1;
+   transition: all 0.5s ease-in-out;
+   overflow: hidden;
+   margin: o;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #322626;
+   text-decoration: none;
+   transition: all 0.3s ease-in-out;
+   text-transform: uppercase;
+   border: none;
+   outline: none;
+}
+
+.header-btn:before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0%;
+   height: 50%;
+   background-color: #f2994a;
+   transition: all 0.5s ease-in-out;
+   z-index: -1;
+}
+
+.header-btn:after {
+   content: "";
+   position: absolute;
+   bottom: 0%;
+   right: 0%;
+   width: 0%;
+   height: 50%;
+   background-color: #2d5f5a;
+   transition: all 0.5s ease-in-out;
+   z-index: -1;
+}
+
+.header-btn:hover {
+   color: #322626;
+}
+
+.header-btn:hover:before,
+.header-btn:hover:after {
+   width: 100%;
+}
+
+/* main logo image */
+.logo-img {
+    width: 80%;
+    margin-left: 10vw;
+    transition: all 800ms;
+    z-index: -1;
+}
+
+.img-main:hover .logo-img {
+    transform: rotate(360deg) scale(0.1);
+}
+
+/* information section */
+.info {
+    margin: 2rem 0 0 0;
+    grid-row: 3;
+    width: 85vw;
+    justify-self: center;
+    line-height: 1.5rem;
+}
+
+.stuff {
+    text-align: center;
+    font-size: 1.25rem;
+    z-index: 1;
+    font-family: 'Kdam Thmor'
+}
+
+.bold {
+    
+    font-weight: bold;
+    font-family: 'Kumar One';
+}
+
+/* navigation menu elements */
+nav {
+    grid-row: 4;
+    margin: 0 0 2rem 0;
+    font-family: 'Kumar One';
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
+    padding: 0;
+    width: 100%;
+}
+
+.bar {
+    background-color: #2d5f5a;
+}
+
+li {
+    position: relative;
+    background-color: #2d5f5a;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    width: auto;
+    justify-content: center;
+    transition: all 300ms;
+}
+
+a {
+    display: block;
+    width: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff7ee;
+}
+
+.dropdown {
+    display: none;
+    background-color: none;
+}
+
+.drop:hover .dropdown, .drop:focus .dropdown {
+    position: absolute;
+     top: 3.4rem;
+     left:0;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown li {
+    width: 10rem;
+}
+
+li:hover, li:focus {
+    background-color: #f2994a;
+    text-decoration: underline;
+    color:#fff7ee;
+}
+
+/* footer start */
+footer {
+    grid-row: 5;
+    background-color: #f2994a;
+    padding: 1rem;
+}
+
+.sub-footer {
+    display: grid;
+}
+
+.mini-logo {
+    grid-column: 1;
+    justify-items:  center;
+    align-content: center;
+    font-size: 4rem;
+    text-shadow: 0 0 4px black;
+    border-right: solid black 0.1rem;
+}
+
+.mini-contact p {
+    font-family: 'Kdam Thmor';
+}
+
+.mini-contact .bold {
+    font-family: 'Kumar One'
+}
+
+.mini-logo p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: min-content;
+    font-family: 'Kumar One'
+}
+
+.mini-contact {
+    grid-column: 2;
+    margin-left: 1rem;
+    align-content: center;
+}
