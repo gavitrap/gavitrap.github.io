@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: 'Kumar Thmor';
+    font-family: 'Kumar One';
     display: grid;
     color:#322626;
     background-color: #fff7ee;
@@ -13,6 +13,7 @@ header {
 
 header h1 {
     margin: 0;
+    font-size: 48px
 }
 
 /* header animation start */
