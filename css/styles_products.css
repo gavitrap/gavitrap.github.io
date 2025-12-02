@@ -132,9 +132,9 @@ li:hover, li:focus {
     color:#fff7ee;
 }
 
-/* start of product section*/
+/* start of product nav*/
 .category {
-    width: 70vw;
+    width: 90vw;
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -146,7 +146,7 @@ li:hover, li:focus {
 
 .category li {
     padding: 1rem;
-    width: 6rem;
+    width: 30vw;
     margin-bottom: 1rem;
 }
 
@@ -155,34 +155,45 @@ section {
     justify-items: center;
     background-color: #f2994a;
     color: #fff7ee;
+    font-family: Kumar One;
 }
 
-.seller-card {
-    width: 80vw;
+/* start of product section*/
+main {
+    grid-row: 4;
+    justify-items: center;
+    margin-bottom: 5vh;
+}
+
+main h2, main h3 {
+    font-family: Kumar One;
+}
+
+.product-card {
+    width: 70vw;
     box-shadow: 2px 2px 4px gray;
     text-align: center;
     padding: 1rem;
     margin-bottom: 0.5rem;
 }
 
-.seller-card a {
+.product-card a {
     color: #322626;
     font-size: 1rem;
     text-decoration: underline;
+    display: inline;
 }
 
-.seller-card img {
-    width: 30vw;
+.product-card img {
+    width: 40vw;
+    max-height: 30vh;
 }
 
-.seller-card h3 {
+.product-card h3 {
     margin-top: 0;
 }
 
-main {
-    grid-row: 4;
-}
-
+/* Footer start */
 footer {
     grid-row: 5;
     background-color: #f2994a;
@@ -224,7 +235,7 @@ footer {
     align-content: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     /* Nav bar alterations */
     nav li {
         width: 20vw;
@@ -241,6 +252,26 @@ footer {
     .dropdown li {
         width: 20vw;
         padding: 0.5rem;
+    }
+
+    /* Category Nav (Section) Alteration */
+    .category li {
+        width: 25vw;
+    }
+
+    /* Product List (Main) Alteration */
+    .category-section {
+        display: grid;
+        width: 90vw;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .product-card {
+        width: 25vw;
+    }
+
+    .product-card img {
+        width: 20vw
     }
 
     /* Footer alteration */
