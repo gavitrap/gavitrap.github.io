@@ -80,6 +80,10 @@ header h1 {
     z-index: -1;
 }
 
+.img-main {
+    grid-row: 3;
+}
+
 .img-main:hover .logo-img {
     transform: rotate(360deg) scale(0.1);
 }
@@ -87,7 +91,7 @@ header h1 {
 /* information section */
 .info {
     margin: 2rem 0 0 0;
-    grid-row: 3;
+    grid-row: 4;
     width: 85vw;
     justify-self: center;
     line-height: 1.5rem;
@@ -108,7 +112,7 @@ header h1 {
 
 /* navigation menu elements */
 nav {
-    grid-row: 4;
+    grid-row: 2;
     margin: 0 0 2rem 0;
     font-family: 'Kumar One';
 }
@@ -211,11 +215,7 @@ footer {
     align-content: center;
 }
 
-@media screen and (min-width: 600px) {
-    header {
-        margin-bottom: 2rem;
-    }
-    
+@media screen and (min-width: 600px) {    
     /* start of split img and info screen */
     .test {
         display: grid;
@@ -231,8 +231,10 @@ footer {
     }
     
     .img-main {
-    width: 100%;
-    margin: 0;
+        width: 100%;
+        margin: 0;
+        grid-row: 1;
+        grid-column: 1;
     }
 
     .logo-img {
