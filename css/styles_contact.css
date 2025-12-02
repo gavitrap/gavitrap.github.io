@@ -167,7 +167,7 @@ form {
             
         &.thick {
             height: 3.3rem;
-            padding: .5rem 3.5rem;
+            padding: 1rem;
         }
 
         &:focus {
@@ -178,7 +178,7 @@ form {
     }
         
     .message .form-control {
-        padding: .5rem 3.5rem;
+        padding: 1rem;
     }
 	
     ::placeholder {
@@ -271,23 +271,47 @@ footer {
     align-content: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width:600px) {
     /* Nav bar alterations */
     nav li {
         width: 20vw;
     }
 
     .drop:hover .dropdown, .drop:focus .dropdown {
-    position: absolute;
-     top: 4.1rem;
-     left:0;
-    display: flex;
-    flex-direction: column;
+        position: absolute;
+        top: 4.1rem;
+        left:0;
+        display: flex;
+        flex-direction: column;
     }
 
     .dropdown li {
         width: 20vw;
         padding: 0.5rem;
+    }
+
+    /*Form Alterations*/
+    section {
+        width: 100%
+    }
+    
+    .container-form {
+        width: 90%;
+        justify-content: center
+    }
+
+    .form-group {
+        width: 80%;
+        margin-left: -50px;
+    }
+
+    input,
+    textarea {
+        font-family: 'Kumar Thmor';
+        color: #212529;
+        font-size: 1.1rem;
+        margin: 10px;
+        width: 100%
     }
     
     /* Footer alteration */
