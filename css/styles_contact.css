@@ -4,6 +4,7 @@ body {
     display: grid;
     color:#322626;
     background-color: #fff7ee;
+    width: 100%
 }
 
 header {
@@ -13,13 +14,13 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 48px
+    font-size: 48px;
 }
 
 /* header animation start */
 .button {
     cursor: pointer;
-    width:100%;
+    max-width:100%;
     padding: 15px 25px;
     position: relative;
     z-index: 1;
