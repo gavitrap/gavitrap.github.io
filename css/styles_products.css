@@ -163,6 +163,7 @@ section {
 main {
     width: 100%;
     grid-row: 4;
+    margin-bottom: 1rem;
 }
 
 main h2 {
