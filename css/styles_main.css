@@ -9,7 +9,6 @@ body {
 header {
     grid-row: 1;
     justify-items: center;
-    z-index: 1;
 }
 
 header h1 {
@@ -20,56 +19,56 @@ header h1 {
 
 /* header animation start */
 .button {
-   cursor: pointer;
-   width:100%;
-   padding: 15px 25px;
-   position: relative;
-   z-index: 1;
-   transition: all 0.5s ease-in-out;
-   overflow: hidden;
-   margin: o;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   color: #322626;
-   text-decoration: none;
-   transition: all 0.3s ease-in-out;
-   text-transform: uppercase;
-   border: none;
-   outline: none;
+    cursor: pointer;
+    width:100%;
+    padding: 15px 25px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    margin: o;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #322626;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
 }
 
 .header-btn:before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 0%;
-   height: 50%;
-   background-color: #f2994a;
-   transition: all 0.5s ease-in-out;
-   z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 50%;
+    background-color: #f2994a;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
 }
 
 .header-btn:after {
-   content: "";
-   position: absolute;
-   bottom: 0%;
-   right: 0%;
-   width: 0%;
-   height: 50%;
-   background-color: #2d5f5a;
-   transition: all 0.5s ease-in-out;
-   z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 0%;
+    height: 50%;
+    background-color: #2d5f5a;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
 }
 
 .header-btn:hover {
-   color: #322626;
+    color: #322626;
 }
 
 .header-btn:hover:before,
 .header-btn:hover:after {
-   width: 100%;
+    width: 100%;
 }
 
 /* main logo image */
@@ -108,8 +107,8 @@ header h1 {
 
 /* navigation menu elements */
 nav {
-    grid-row: 4;
-    margin: 0 0 2rem 0;
+    grid-row: 2;
+    margin: 0;
     font-family: 'Kumar One';
 }
 
