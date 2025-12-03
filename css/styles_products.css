@@ -133,9 +133,9 @@ li:hover, li:focus {
     color:#fff7ee;
 }
 
-/* start of product section*/
+/* start of product nav*/
 .category {
-    width: 70vw;
+    width: 90vw;
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -156,6 +156,7 @@ section {
     justify-items: center;
     background-color: #f2994a;
     color: #fff7ee;
+    font-family: Kumar One;
 }
 
 main {
@@ -174,22 +175,26 @@ main h2 {
     text-align: center;
     padding: 1rem;
     margin-bottom: 0.5rem;
+    font-family: 'Kumar Thmor';
 }
 
-.seller-card a {
+.product-card a {
     color: #322626;
     font-size: 1rem;
     text-decoration: underline;
+    display: inline;
 }
 
-.seller-card img {
-    width: 30vw;
+.product-card img {
+    width: 40vw;
+    max-height: 30vh;
 }
 
-.seller-card h3 {
+.product-card h3 {
     margin-top: 0;
 }
 
+/* Footer start */
 footer {
     grid-row: 5;
     background-color: #f2994a;
@@ -231,7 +236,7 @@ footer {
     align-content: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     /* Nav bar alterations */
     nav li {
         width: 20vw;
@@ -250,15 +255,26 @@ footer {
         padding: 0.5rem;
     }
 
-    /*Card alteration*/
-    main {
-        width: 100%;
+    /* Category Nav (Section) Alteration */
+    .category li {
+        width: 25vw;
     }
 
-    .seller-card {
-        width: 80%;
-        justify-self: center
+    /* Product List (Main) Alteration */
+    .category-section {
+        display: grid;
+        width: 90vw;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .product-card {
+        width: 25vw;
+    }
+
+    .product-card img {
+        width: 20vw
+    }
+
     /* Footer alteration */
     .sub-footer {
         grid-template-columns: 1fr 4fr;
