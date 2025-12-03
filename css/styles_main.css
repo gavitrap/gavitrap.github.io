@@ -88,6 +88,13 @@ header h1 {
     transform: rotate(360deg) scale(0.1);
 }
 
+/* Caption section */ 
+.img-caption {
+    justify-self: center;
+    z-index: 1;
+    margin-top: 7vh;
+}
+
 /* information section */
 .info {
     margin: 2rem 0 0 0;
@@ -115,6 +122,7 @@ nav {
     grid-row: 2;
     margin: 0 0 2rem 0;
     font-family: 'Kumar One';
+    z-index: 1;
 }
 
 nav ul {
@@ -268,5 +276,9 @@ footer {
 
     .mini-contact {
         margin-left: 7%;
+    }
+
+    .img-caption {
+        margin: 0;
     }
 }
